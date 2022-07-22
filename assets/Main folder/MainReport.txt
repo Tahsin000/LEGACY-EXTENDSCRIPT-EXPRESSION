@@ -1,0 +1,47 @@
+Report created: 
+	22-07-2022	5:46:58 PM
+
+Project name: Main.aep
+
+Source files collected to: 
+	C:\Users\Tahsin Abrar\Desktop\TEST\After Effect Expression\Main folder
+
+Source files collected: For all comps
+
+Collected comps:  
+	A
+	B
+	01
+	02
+	03
+	04
+	The Bounce Expression
+	Automatic Fade
+	Squash and Stretch Scale Expression
+	Loop
+	Looping Wiggle
+	Time
+	Rotate Multiplication
+	Move Object X Pixel per Second
+	Constant Rotation Per Second
+	Motion Trail Expression
+	Blink Expression
+	
+Number of collected files:  0
+
+Size of collected files:  0 KB
+
+Rendering plug-ins:
+	Classic 3D
+	
+Effects used:  2
+
+Effect:  Checkbox Control
+	
+Effect:  Slider Control
+	
+
+Layer:  Text Layer
+	External dependencies:  
+		Font family: “Baloo Da”, Font style: “Regular”
+
