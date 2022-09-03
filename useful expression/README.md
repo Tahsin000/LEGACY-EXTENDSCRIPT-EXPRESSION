@@ -21,6 +21,9 @@
    ```
    
 4. valueAtTime
+
+   <img src="https://raw.githubusercontent.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/main/useful%20expression/assets/valueAtTime.gif" width="350" >
+   
    - All objects will have scale animation one after the other
       ``` javascript
       // apply scale property 
@@ -72,21 +75,25 @@
    ```
 
 10. if/else
-   ``` javascript
-   if (effect("01")("Checkbox")==1){ 
-    wiggle(1,100);	
-   }
-   else {
-    0;
-   }
-   ```
+    
+    <img src="https://raw.githubusercontent.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/main/useful%20expression/assets/ifelse.gif" width="350" >
+  
+    ``` javascript
+    if (effect("01")("Checkbox")==1){ 
+     wiggle(1,100);	
+    }
+    else {
+     0;
+    }
+    ```
+    
 
 11. length()
-   ``` javascript 
-   a = thisComp.layer("Null 2").transform.position[0];
-   b = thisComp.layer("Null 2").transform.position[1];
-   length(a, b);
-   ```
+    ``` javascript 
+    a = thisComp.layer("Null 2").transform.position[0];
+    b = thisComp.layer("Null 2").transform.position[1];
+    length(a, b);
+    ```
 
 12. Math.abs()
    ``` javascript 
