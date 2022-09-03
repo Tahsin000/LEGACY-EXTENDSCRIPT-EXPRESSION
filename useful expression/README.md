@@ -101,5 +101,8 @@
 14. random()
    ``` javascript 
    Math.round(random(600))
-   ```
-![Project file](https://raw.githubusercontent.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/main/assets/1.%20bounce.gif)
+   ```   
+
+#### [Source](https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/useful%20expression/assets/video.url)
+   - [file](https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/useful%20expression/assets/Project.aep?raw=true)
+
