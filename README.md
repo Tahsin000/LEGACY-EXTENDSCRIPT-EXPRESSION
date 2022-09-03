@@ -15,26 +15,26 @@ The expression language in After Effects is based on JavaScript, which is an imp
 
 ## Understanding the expression language
 - If you want to write an expression that keeps the y value of an animation of Position but fixes the x value at 9, you would use the following:
-```bash
+```javascript
 y = position[1]; 
 [9,y]
 ```
 - This is an important point, so let’s look at one more example. If you want to combine the x position value from Layer A with the y position value from Layer B, you would use the following:
 
-```bash
+```javascript
  x = thisComp.layer("Layer A").position[0];  
  y = thisComp.layer("Layer B").position[1];  
  [x,y]
 ```
 - parent object
-```bash
+```javascript
 thisComp.layer(1).positio
 ```
 ## Top 10 Expressions
 #### **The Bounce Expression**
 
 ![N|Solid](https://raw.githubusercontent.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/main/assets/1.%20bounce.gif)
-```bash
+```javascript
 amp = .1;
 freq = 2.0;
 decay = 2.0;
@@ -55,7 +55,7 @@ value + v*amp*Math.sin(freq*t*2*Math.PI)/Math.exp(decay*t);
 ```
 #### **Automatic Fade**
 ![N|Solid](https://raw.githubusercontent.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/main/assets/2.%20autofade.gif)
-```bash
+```javascript
 transition = 20;       
 if (marker.numKeys<2){
 tSecs = transition / ( 1 / thisComp.frameDuration); 
@@ -68,7 +68,7 @@ linear(time, inPoint, marker.key(1).time, 0, 100)
 ```
 #### **Squash and Stretch Scale Expression**
 ![N|Solid](https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/assets/3.%20squash-stretch.gif?raw=true)
-```bash
+```javascript
 maxDev = 13; // max deviation in pixels
 spd = 30; //speed of oscillation
 decay = 1.0; //how fast it slows down
@@ -80,12 +80,12 @@ y = scale[0]*scale[1]/x;
 #### **Loop**
 
 ![N|Solid](https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/assets/4.%20Loop.gif?raw=true)
-```bash
+```javascript
 loopOut("cycle");
 ```
 #### **Looping Wiggle**
 ![N|Solid](https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/assets/5.%20Loop-wiggle.gif?raw=true)
-```bash
+```javascript
 freq = 1;
 amp = 110;
 loopTime = 3;
@@ -97,13 +97,13 @@ linear(t, 0, loopTime, wiggle1, wiggle2)
 
 #### **Rotate Multiplication**
 ![N|Solid](https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/assets/7.%20Rotate-Multiplication.gif?raw=true)
-```bash
+```javascript
 index*360/20
 ```
 
 #### **Move Object X Pixel per Second**
 ![N|Solid](https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/assets/8.%20Move-Pixel.gif?raw=true)
-```bash
+```javascript
 veloc = 150; //Move object 150 pixel on x axis per second
 x = position[0] + (time - inPoint) *veloc;
 y = position[1];
@@ -111,7 +111,7 @@ y = position[1];
 ```
 #### **Constant Rotation Per Second**
 ![N|Solid](https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/assets/9.%20Constant-Rotation.gif)
-```bash
+```javascript
 "veloc = 360; //360 Degree Rotation per Second
 r = rotation + (time - inPoint) *veloc;
 [r]"
@@ -119,7 +119,7 @@ r = rotation + (time - inPoint) *veloc;
 
 #### **"Motion Trail Expression**
 ![N|Solid](https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/assets/10.%20motion-trail.gif?raw=true)
-```bash
+```javascript
 //Apply to position
 delay = 5; //number of frames to delay
 d = delay*thisComp.frameDuration*(index - 1);
@@ -134,7 +134,7 @@ Math.pow(opacityFactor,index - 1)*100
 
 #### **Blink Expression**
 ![N|Solid](https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/assets/11.%20Blink-expression.gif?raw=true)
-```bash
+```javascript
 blinkSpeed=15;
 n= Math.sin(time*blinkSpeed);
 if(n<0) 0 else 100;
@@ -143,7 +143,7 @@ if(n<0) 0 else 100;
 
 
 #### **Function**
-```bash
+```javascript
 function average(a, b) 
   { 
     return (a + b) / 2; 
