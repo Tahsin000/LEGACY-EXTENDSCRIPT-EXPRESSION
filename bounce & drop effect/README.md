@@ -1,4 +1,4 @@
-# How to create bounce & drop effect using after effects
+# How to create bounce & drop effect?
 
 ## Bounce & drop
 
