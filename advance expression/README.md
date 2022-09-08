@@ -99,8 +99,36 @@ l = length(pointA, pointB);
 linear(l, 0, 110, 100, 30);
 ```
 
+## Set the first character (source text) in the sentence. 
+
+<img src="https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/advance%20expression/assets/charAt()%20Expression%20-1.gif?raw=true" width="350">
+
+``` javascript
+// apply source text - shortcut(ss)
+nameText = thisComp.layer("text_layer_name").text.sourceText;
+nameText.charAt(0)
+```
+
+## Set the sentence's final character (source text).
+
+<img src="https://raw.githubusercontent.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/main/advance%20expression/assets/charAt()%20Expression%20-2.gif" width="350">
+
+``` javascript
+// apply source text - shortcut(ss)
+nameText = thisComp.layer("text_layer_name").text.sourceText;
+nameText.charAt(nameText.length-1) 
+```
 
 
+## In a sentence, use two char concatenations (first char + last char).
+
+<img src="https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/advance%20expression/assets/charAt()%20Expression%20-3.gif?raw=true" width="350">
+
+``` javascript
+// apply source text - shortcut(ss)
+nameText = thisComp.layer("text_layer_name").text.sourceText;
+nameText.charAt(0) + nameText.charAt(nameText.length - 1)
+```
 
 
 
