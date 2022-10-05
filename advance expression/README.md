@@ -130,7 +130,9 @@ nameText = thisComp.layer("text_layer_name").text.sourceText;
 nameText.charAt(0) + nameText.charAt(nameText.length - 1)
 ```
 
-
-
+## toUpperCase & toLowerCase Method
+``` javascript
+this.Comp.name.splid(" ")[0].charAt().toUpperCase();
+```
 
 [Project file](https://github.com/Tahsin000/LEGACY-EXTENDSCRIPT-EXPRESSION/blob/main/advance%20expression/assets/Source%20file.aep?raw=true)
